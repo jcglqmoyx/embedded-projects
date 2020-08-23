@@ -27,7 +27,7 @@ while True:
     RPi.GPIO.output(13, 0)
 
     i += 1
-    if i == 5:
+    if i == 10:
         break
 
 RPi.GPIO.cleanup()
