@@ -1,10 +1,14 @@
 import RPi.GPIO
 import time
+
 RPi.GPIO.setwarnings(False)
+
 RPi.GPIO.setmode(RPi.GPIO.BOARD)
+
 RPi.GPIO.setup(11, RPi.GPIO.OUT)
 RPi.GPIO.setup(12, RPi.GPIO.OUT)
 RPi.GPIO.setup(13, RPi.GPIO.OUT)
+
 i = 1
 while True:
     RPi.GPIO.output(11, 1)
