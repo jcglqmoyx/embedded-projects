@@ -9,17 +9,19 @@ i = 1
 while True:
     RPi.GPIO.output(11, 1)
     print('red\n')
-    time.sleep(3)
+    time.sleep(2)
+    RPi.GPIO.output(11, 0)
+
     RPi.GPIO.output(12, 1)
     print('green\n')
-    time.sleep(3)
+    time.sleep(2)
+    RPi.GPIO.output(12, 0)
+
     RPi.GPIO.output(13, 1)
     print('blue\n')
-    time.sleep(3)
-    RPi.GPIO.output(11, 0)
-    RPi.GPIO.output(12, 0)
+    time.sleep(2)
     RPi.GPIO.output(13, 0)
-    time.sleep(0.2)
+
     i += 1
     if i == 5:
         break
