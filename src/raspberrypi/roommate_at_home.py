@@ -1,3 +1,4 @@
+import datetime
 import os
 import time
 
@@ -11,7 +12,12 @@ while True:
         print('not at home')
     else:
         print('at home')
-
+        time_when_his_phone_connected_to_wifi = str(datetime.datetime.now().hour) + ':' + str(
+            datetime.datetime.now().minute)
+        print(time_when_his_phone_connected_to_wifi)
+        file = open('time.txt', 'w')
+        file.write(time_when_his_phone_connected_to_wifi)
+        file.close()
         RPi.GPIO.setwarnings(False)
 
         RPi.GPIO.setmode(RPi.GPIO.BOARD)
