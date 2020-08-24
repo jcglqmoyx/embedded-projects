@@ -5,7 +5,7 @@ import time
 import RPi.GPIO
 
 while True:
-    time.sleep(0.3)
+    time.sleep(1)
     ip = '192.168.1.2'
     back_info = os.system('ping -c 1 -w 1 %s' % ip)
     if back_info:
