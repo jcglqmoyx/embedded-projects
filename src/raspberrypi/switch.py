@@ -8,6 +8,8 @@ green = 12
 button1 = 13
 button2 = 14
 
+RPi.GPIO.setwarnings(False)
+
 RPi.GPIO.setmode(RPi.GPIO.BOARD)
 
 RPi.GPIO.setup(red, RPi.GPIO.OUT)
