@@ -42,4 +42,4 @@ while True:
             if i == 5:
                 break
 
-        RPi.GPIO.cleanup()
+    RPi.GPIO.cleanup()
