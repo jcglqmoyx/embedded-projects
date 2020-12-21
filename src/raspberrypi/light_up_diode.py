@@ -5,7 +5,7 @@ import RPi.GPIO
 
 current_date = datetime.datetime.now()
 hour = current_date.hour
-ur = hour % 12
+hour = hour % 12
 minute = current_date.minute
 print(current_date)
 
