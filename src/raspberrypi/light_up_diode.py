@@ -24,6 +24,7 @@ RPi.GPIO.setup(35, RPi.GPIO.OUT)
 RPi.GPIO.setup(37, RPi.GPIO.OUT)
 
 i = 1
+print(hour)
 while True:
     hour -= 8
     if hour >= 0:
